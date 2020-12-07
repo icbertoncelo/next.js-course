@@ -17,6 +17,7 @@ export default function Home({ recommendedProducts }: HomeProps) {
   async function handleSum() {
     const math = (await import('../lib/math')).default
 
+    console.log(process.env.NEXT_PUBLIC_API_URL)
     alert(math.sum(2,5))
   }
   
